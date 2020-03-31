@@ -42,9 +42,7 @@ public class SpacesRemover {
        // retrieve the current character at the index i
         char l = sentence.charAt(i);
        // in each iteration check whether the current character is a space, if it isn't add the character to the buffer sb
-        if (l == ' '){
-            sb.append("");
-        }else{
+        if (l != ' '){
             sb.append(l);
         }
     }//for
